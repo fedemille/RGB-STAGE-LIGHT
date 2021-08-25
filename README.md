@@ -72,6 +72,7 @@ Nello specifico permette di avere diverse funzioni:
   10. Background Verde
   11. Background Blu
 
+
 ## Menu
   Questa luce presenta due menu diversi. Il primo identificato dal colore verde e il secondo dal colore blu.
   Per entrare nel menu basta tener premuto il pulsante per 2 secondi. A questo punto rilasciandolo sarete entrati nel primo menu
@@ -86,3 +87,33 @@ Nello specifico permette di avere diverse funzioni:
     Tutti i led accesi significa che è attivo solo il modo DMX, quindi senza controllo automatico.
     Durante l'automode la connessione DMX sarà disabilitata e saranno presi i beat dal microfono.
   
+  
+## Automode
+  In ognuna delle automode, gli effetti varieranno secondo un range rappresentato qui di seguito.
+  1. Range dalla modalità 1 alla 11
+  2. Modalità 3 e 4
+  3. Modalità 8 e 9
+  4. Modalità 5 e 6
+  5. Modalità 11 e 12
+  6. Range dalla modalità 1 alla 11 con tempo di intervallo fissato ad 1 secondo
+  
+  *Se le automode vengono impostate tramite comando manuale (il pulsante), esse disabiliteranno il DMX e si baseranno sul microfono e sulle frequenze rilevate per determinare i beat della musica. Inoltre verrà abilitato il cambio automatico dei colori in modo randomico.*
+  
+## Modalità
+  Le modalità (o effetti) sono predefiniti e può essere variato solo il parametro dell'intervallo tra un effetto e il seguente. Il tempo di durata dell'effetto invece non è modificabile direttamente, ma solo agendo sulle direttive nel codice. Questa scelta è stata fatta per non complicare ulteriormente i menu, inoltre sono tutti valori calcolati per essere funzionali con musica intorno o sotto ai 140 bpm (Techno, house, reggaeton, ecc).
+  0. Nessuna modalità. Tutto controllabile manualmente
+  1. Stroboscopica
+  2. Alternamento tra 6 led inferiori e i 6 led superiori
+  3. Rincorsa dal basso
+  4. Rincorsa dall'alto
+  5. Rincorsa dal centro (verso l'esterno)
+  6. Rincorsa dall'esterno (verso il centro)
+  7. Rincorsa dal centro verso l'esterno e viceversa con un tempo più breve delle singole, e con un flashing dei led a lato alla fine
+  8. Riempimento dall'alto
+  9. Riempimento dal basso
+  10. *VU Meter pieno, con i led accesi che partono dal basso. Se il colore viene impostato a R0 G0 B0 sarà impostato un colore di default (8 led verdi, 2 gialli e 2 rossi con flashing)
+  11. *VU Meter a punti, con soli due led accesi. Se il colore viene impostato a R0 G0 B0 sarà impostato un colore di default (8 led verdi, 2 gialli e 2 rossi con flashing)
+  12. *Psichedelica. Tutto rosso per il beat, due led viola semicentrali per i medi e due led azzurri esterni per gli alti
+  13. Cambio graduale dei colori
+
+  *\*basati sul microfono e sull'analisi spettrometrica delle frequenze*

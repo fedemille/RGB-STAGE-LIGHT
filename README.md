@@ -1,5 +1,5 @@
 # RGB-STAGE-LIGHT
-Luce per uso semi-professionale DIY in ambito musicale
+Luce per uso semi-professionale in ambito musicale
 
 
 Essendo questa una luce da essere utilizzata quasi in luoghi nei quali è presente musica ad alti volumi, è stata progettata per quello e può dare il meglio di sè.

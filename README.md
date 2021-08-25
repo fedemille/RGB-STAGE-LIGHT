@@ -26,7 +26,7 @@ Nello specifico permette di avere diverse funzioni:
     - 1N4007 Diode * 2
     - Oscillatore al quarzo 16MHz * 1
     - Switch * 1
-    - 16pF * 2
+    - 22pF * 2
     - 47uF * 1
     - 10uF * 1
     - ohm 2w * 12

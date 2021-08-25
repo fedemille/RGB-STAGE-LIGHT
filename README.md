@@ -45,6 +45,8 @@ Nello specifico permette di avere diverse funzioni:
   - Lastra di alluminio per il sostegno dei led, lenti, circuiti e dissipatori
   - Barra di ferro forata per la struttura
 
+
+
 ## Librerie
 
   - [EEPROM](https://www.arduino.cc/en/Reference/EEPROM)
@@ -53,6 +55,7 @@ Nello specifico permette di avere diverse funzioni:
   ### Usate nel codice
   
   - [ApproxFFT](https://create.arduino.cc/projecthub/abhilashpatel121/approxfft-fastest-fft-function-for-arduino-fd4917)
+
 
 
 ## Canali DMX
@@ -73,6 +76,7 @@ Nello specifico permette di avere diverse funzioni:
   11. Background Blu
 
 
+
 ## Menu
   Questa luce presenta due menu diversi. Il primo identificato dal colore verde e il secondo dal colore blu.
   Per entrare nel menu basta tener premuto il pulsante per 2 secondi. A questo punto rilasciandolo sarete entrati nel primo menu
@@ -88,6 +92,7 @@ Nello specifico permette di avere diverse funzioni:
     Durante l'automode la connessione DMX sarà disabilitata e saranno presi i beat dal microfono.
   
   
+  
 ## Automode
   In ognuna delle automode, gli effetti varieranno secondo un range rappresentato qui di seguito.
   1. Range dalla modalità 1 alla 11
@@ -98,6 +103,8 @@ Nello specifico permette di avere diverse funzioni:
   6. Range dalla modalità 1 alla 11 con tempo di intervallo fissato ad 1 secondo
   
   *Se le automode vengono impostate tramite comando manuale (il pulsante), esse disabiliteranno il DMX e si baseranno sul microfono e sulle frequenze rilevate per determinare i beat della musica. Inoltre verrà abilitato il cambio automatico dei colori in modo randomico.*
+  
+  
   
 ## Modalità
   Le modalità (o effetti) sono predefiniti e può essere variato solo il parametro dell'intervallo tra un effetto e il seguente. Il tempo di durata dell'effetto invece non è modificabile direttamente, ma solo agendo sulle direttive nel codice. Questa scelta è stata fatta per non complicare ulteriormente i menu, inoltre sono tutti valori calcolati per essere funzionali con musica intorno o sotto ai 140 bpm (Techno, house, reggaeton, ecc).

@@ -162,4 +162,5 @@ La resistenza in serie ai led rossi dovrà essere di 6.8 ohm 2w, in quanto il le
   - [ ] Dissipatori sottodimensionati, il calore dissipato dai led è troppo alto e farebbe raggiungere una temperatura di oltre 80°C in meno di 10 minuti alla massima luminosità costante
   - [ ] In alcuni casi particolarmente sfavorevoli gli effetti dei led manifestano un piccolo ritardo di alcuni millisecondi
   - [ ] L'algorimo FFT, per quanto sia ottimizzato e approssimato, occupa il processore per diversi millisecondi. Si potrebbe risolvere separando i calcoli.
+  - [ ] Dissipazione di calore e potenza dovuto all'uso delle resistenze per i led. Si potrebbe creare un alimentatore ad hoc alla giusta tensione per l'alimentazione dei led.
   

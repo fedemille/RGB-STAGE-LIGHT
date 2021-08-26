@@ -1,4 +1,10 @@
+/*
 
+	Author: Federico Millefanti
+		IG: @fede_mille
+	Licence Apache 2.0
+
+*/
 #include <Conceptinetics.h>
 #include <EEPROM.h>
 

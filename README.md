@@ -2,9 +2,10 @@
 Luce per uso semi-professionale in ambito musicale
 
 
-Essendo questa una luce da essere utilizzata quasi in luoghi nei quali è presente musica ad alti volumi, è stata progettata per quello e può dare il meglio di sè.
-Consente infatti un'auto-regolazione della sensibilità del microfono adattandolo nel modo perfetto al volume della musica, senza però avere il problema della diminuzione del volume dovuta ad una parte "leggera" delle canzoni.
-Può essere usata con modalità a rotazione automatiche oppure in un modo più professionale attraverso la connessione ad un DMX controller.
+Luce RGB con led controllabili singolarmente ad alta potenza, con automazioni, effetti e controllo da un mixer esterno.
+Progettata per essere immersa nella musica ad alto volume, include diverse funzioni come l'auto-regolazione della sensibilità del microfono, adattandolo nel modo perfetto al volume della musica, senza però avere il problema dell'eccessiva correzione del volume dovuta a momenti calmi improvvisi delle canzoni ma al tempo stesso reagendo a modifiche del volume generale.
+Include inoltre la possibilità del controllo da parte di un mixer DMX professionale, così da poter adattarsi a tutte le esigenze.
+
 
 Nello specifico permette di avere diverse funzioni:
   - led controllati singolarmente
@@ -14,6 +15,7 @@ Nello specifico permette di avere diverse funzioni:
   - modalità stand-alone
   - settings per il settaggio dell'inditrizzo DMX o per la modalità stand-alone
   - microfono con rilevazione automatica dei beat
+
 
 
 ## Componenti utilizzati
@@ -29,21 +31,22 @@ Nello specifico permette di avere diverse funzioni:
     - 22pF * 2
     - 47uF * 1
     - 10uF * 1
-    - ohm 2w * 12
-    - ohm 1w * 24
-    - Connettori DMX maschio e femmina
-    - Connettore 12v
-    - Terminatori
-    - LED RGB 3w 6 pin
-    - Lenti 8 gradi
-    - Supporti lenti
-    - Microfono
-    - Convertitore RS485 to TTL
-    - Striscia led rossa
+    - 15 ohm 2w * 12
+    - 6.8 ohm 1w * 24
+    - Connettori DMX maschio e femmina * 1
+    - Connettore 12v * 1
+    - Terminatori 2p * 5
+    - LED RGB 3w 6 pin * 36
+    - Lenti 8 gradi * 36
+    - Supporti lenti * 36
+    - Microfono * 1
+    - Convertitore RS485 to TTL * 1
+    - Striscia led rossa 1.5m * 2
 
   ### Strutturali
   - Lastra di alluminio per il sostegno dei led, lenti, circuiti e dissipatori
   - Barra di ferro forata per la struttura
+  - Dissipatori
 
 
 
@@ -82,14 +85,16 @@ Nello specifico permette di avere diverse funzioni:
   Per entrare nel menu basta tener premuto il pulsante per 2 secondi. A questo punto rilasciandolo sarete entrati nel primo menu
   Per passare al secondo menu e poi per uscire bisogna ancora tenere premuto il pulsante.
   Per modificare una voce basta semplicemente premere una volta il pulsante.
+  
   #### Canale DMX
-    Questa è la scelta del canale base DMX dal quale iniziare a leggere i canali. Ogni led corrisponde ad un multiplo di 16 +1 (a partire dal canale 1).
-    1 - 17 - 33 - 49 - ecc.
-    Per tornare al primo valore, scorrere fino all'ultimo e premere una volta ancora
+  Questa è la scelta del canale base DMX dal quale iniziare a leggere i canali. Ogni led corrisponde ad un multiplo di 16 +1 (a partire dal canale 1).
+  *1 - 17 - 33 - 49 - ecc.*
+  Per tornare al primo valore, scorrere fino all'ultimo e premere una volta ancora
+
   #### Automode
-    L'automode viene abilitata solo quando ci sarà un unico led acceso. 
-    Tutti i led accesi significa che è attivo solo il modo DMX, quindi senza controllo automatico.
-    Durante l'automode la connessione DMX sarà disabilitata e saranno presi i beat dal microfono.
+  L'automode viene abilitata solo quando ci sarà un unico led acceso. 
+  Tutti i led accesi significa che è attivo solo il modo DMX, quindi senza controllo automatico.
+  Durante l'automode la connessione DMX sarà disabilitata e saranno presi i beat dal microfono.
   
   
   
@@ -124,3 +129,37 @@ Nello specifico permette di avere diverse funzioni:
   13. Cambio graduale dei colori
 
   *\*basati sul microfono e sull'analisi spettrometrica delle frequenze*
+
+
+
+
+
+
+## Schema
+  Schema del circuito centrale, nel quale si trova l'atmega328p, con le diverse connessioni al microfono, al DMX, all'alimentazione e alle strisce led.
+![schemaRGBSTAGELIGHT](https://user-images.githubusercontent.com/67070203/130881474-e93b4121-a1b9-44df-92a7-d519e544fb61.png)
+
+
+
+
+## Circuiti
+Schema dei circuiti per ogni 2 gruppi di led
+![schemaRGBSTAGELIGHTcircuit](https://user-images.githubusercontent.com/67070203/130877291-44b75738-3f1a-4305-8f49-6e4e1e7075d4.png)
+
+
+
+## LEDs
+Schema di ogni gruppo di led RGB
+La resistenza in serie ai led rossi dovrà essere di 6.8 ohm 2w, in quanto il led di colore rosso richiede una tensione minore rispetto agli altri due.
+![schemaRGBSTAGELIGHTleds](https://user-images.githubusercontent.com/67070203/130881465-104e17af-7000-4a23-b5bb-beba46111adc.png)
+
+
+
+## Altri dati
+  Consumo max: 160w
+  
+  ### Problemi noti
+  - [ ] Dissipatori sottodimensionati, il calore dissipato dai led è troppo alto e farebbe raggiungere una temperatura di oltre 80°C in meno di 10 minuti alla massima luminosità costante
+  - [ ] In alcuni casi particolarmente sfavorevoli gli effetti dei led manifestano un piccolo ritardo di alcuni millisecondi
+  - [ ] L'algorimo FFT, per quanto sia ottimizzato e approssimato, occupa il processore per diversi millisecondi. Si potrebbe risolvere separando i calcoli.
+  

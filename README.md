@@ -164,3 +164,20 @@ La resistenza in serie ai led rossi dovrà essere di 6.8 ohm 2w, in quanto il le
   - [ ] L'algorimo FFT, per quanto sia ottimizzato e approssimato, occupa il processore per diversi millisecondi. Si potrebbe risolvere separando i calcoli.
   - [ ] Dissipazione di calore e potenza dovuto all'uso delle resistenze per i led. Si potrebbe creare un alimentatore ad hoc alla giusta tensione per l'alimentazione dei led.
   
+
+
+
+# Foto e Video
+
+
+
+
+https://user-images.githubusercontent.com/67070203/131044544-d58b89ad-13d6-408c-add6-01e6e3a2534e.mp4
+
+
+
+
+
+
+
+

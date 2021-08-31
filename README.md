@@ -1,5 +1,8 @@
 # RGB-STAGE-LIGHT
-Luce per uso semi-professionale in ambito musicale
+Luce per uso semi-professionale per eventi
+
+![IMG_20210901_003731_718-01](https://user-images.githubusercontent.com/67070203/131586473-03bf5332-57eb-43bf-a042-0a761b9c905b.jpeg)
+
 
 
 Luce RGB con led controllabili singolarmente ad alta potenza, con automazioni, effetti e controllo da un mixer esterno.
@@ -174,6 +177,8 @@ La resistenza in serie ai led rossi dovrà essere di 6.8 ohm 2w, in quanto il le
 
 https://user-images.githubusercontent.com/67070203/131044544-d58b89ad-13d6-408c-add6-01e6e3a2534e.mp4
 
+![20210831231323_IMG_9093](https://user-images.githubusercontent.com/67070203/131586600-0072d851-771d-401f-bfb6-b2cd56dc3c87.JPG)
+![20210831231324_IMG_9095](https://user-images.githubusercontent.com/67070203/131586604-34142f85-c1a0-4cd8-9efb-00af6e3c1800.JPG)
 
 
 

@@ -5,9 +5,9 @@ Luce per uso semi-professionale per eventi
 
 
 
-Luce RGB con led controllabili singolarmente ad alta potenza, con automazioni, effetti e controllo da un mixer esterno.
-Progettata per essere immersa nella musica ad alto volume, include diverse funzioni come l'auto-regolazione della sensibilità del microfono, adattandolo nel modo perfetto al volume della musica, senza però avere il problema dell'eccessiva correzione del volume dovuta a momenti calmi improvvisi delle canzoni ma al tempo stesso reagendo a modifiche del volume generale.
-Include inoltre la possibilità del controllo da parte di un mixer DMX professionale, così da poter adattarsi a tutte le esigenze.
+Luce RGB con led controllabili singolarmente ad alta potenza, con automazioni, effetti e possibilità di controllo da un controller esterno.
+Progettata per essere immersa nella musica ad alto volume, include diverse funzioni come l'auto-regolazione della sensibilità del microfono, adattandolo in modo perfetto al volume della musica, senza avere il problema dell'eccessiva correzione del range dovuta a improvvisi cambiamenti di dinamica nelle canzoni, ma al tempo stesso reagendo a modifiche del volume generale.
+Include inoltre la possibilità del controllo da parte di un mixer DMX professionale, così da potersi adattare a tutte le esigenze.
 
 
 Nello specifico permette di avere diverse funzioni:
